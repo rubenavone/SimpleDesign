@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>replit</title>
+	<link class="styleChanger" href="css/style-dark.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<!-- TODO:
+      Page index
+      - Faire un menu (pour le responsive il faut JavaScript) []
+      - Mettre un gros titre avec une rotation de mot (javascript) [x]
+      - Ajouter un bouton contact cliquable qui ramene à la page contact [x]
+      - Faire un footer [x]
+      - Ajouter un changement au survol sur le bouton Contact Avec la library AOS []
+      - Une modale cliquable en html/css []
+      - Un Bouton qui pourrais intervertir les couleur (à voir si c'est jouable en css uniquement, sinon variable css et js) [x] obligé de mettre du js
+
+      Page projet
+      - Des petites cartes pour chaque projet. [x]
+      - Animation au survol. [x]
+      - Un texte pour décrire [x]
+      - Un Bouton [x]
+
+      Page contact
+      - Formulaire de contact [x]
+      - Information de contact []
+      
+        Optionelle
+      - Ajouter une carte Google Maps | openstreet map | autre []
+
+      Rendre le tout responsive avec @media 
+        INDEX []
+        PROJET [x]
+        CONTACT []
+      
+      Dans le cas d'une Futur journée wordpress, lié la partie Blog au wordpress
+      Lors de la création du thème enfant, Réflechir à une eventuelle liaison entre
+      les deux partie de site.
+    -->
+
+<body>
+  
+	<nav class="main-menu">
+		<ul class="flex-list">
+			<div class="animate-cube"></div>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="projets.html">Projets</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Shaarli</a></li>
+		</ul>
+	</nav>
+  
+	<main>
+		<article class="title-moving-words">
+			<section class="hello">I love</section>
+			<section id="changeWordFunction" class="change-word"></section>
+		</article>
+		<article class="about-myself">
+			<section>Développeur depuis 2002, je réalise vos projets depuis 2021. Voir vos ambitions se réalisées est le moteur de
+				ma société. Conception ergonomique et sobre, pour un affichage toujours plus rapide. Mise en place d'une stratégie SEO
+				gagnante pour un référencement de qualité. Nous accompagnons tout types de structure vers une transition numérique.
+
+			</section>
+			<a data-aos="fade-up"href="contact.html"><button>Contact</button></a>
+      
+    </article>
+    </main>
+    <footer>
+      	<ul class="flex-list">
+          <li class="social-network linked-in"><a href="#" ></a></li>
+		    	<li class="social-network github"><a href="#"></a></li>	
+          <div id="colorChanger"class="circle"> </div>
+		    	<li><a href="#">Mention légale</a></li>
+			    <li><a href="#">RGPD</a></li>
+		</ul>
+      </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

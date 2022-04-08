@@ -1,0 +1,9 @@
+:root{
+  --main-bg-color: #0c0e1c;
+  --second-bg-color: #f1eedc;
+  --primary-text-color: #f1eedc;
+  --secondary-text-color: #0c0e1c;
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-roboto: 'Roboto', sans-serif;
+}
