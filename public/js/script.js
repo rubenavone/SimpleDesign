@@ -8,7 +8,6 @@ Faire une fonction qui onclick change inverse les variable de couleur.
 
 //IIFES (imediately invoked function expressions)
 //Fonction anonyme immédiate.
-
   let wordSelection = document.querySelector("#changeWordFunction");
   let devArray = ["to Design", "to Code", "to Learn", "computing"];
   function changeWord(wordArray) {
@@ -26,7 +25,7 @@ Faire une fonction qui onclick change inverse les variable de couleur.
 
   switchButton.addEventListener("click", function () {
     darkOrLight = styleLoader.getAttribute("href");
-    console.log(darkOrLight);
+  
     if (darkOrLight === "css/style-light.css" || darkOrLight === null ) {
       localStorage.setItem("background", "css/style-dark.css");
       styleLoader.setAttribute("href", "css/style-dark.css");
@@ -39,12 +38,8 @@ Faire une fonction qui onclick change inverse les variable de couleur.
   window.onload = () => {  
     if(localStorage.length == 0){
       styleLoader.setAttribute("href","css/style-dark.css");
-      console.log("dans le chargement ! style loader est  égal à null")
     }else{
       styleLoader.setAttribute("href", localStorage.getItem('background'));
-      console.log(darkOrLight)
-      console.log("dans le chargement ! style loader n'est pas égal à null")
-
     }
   };
 
